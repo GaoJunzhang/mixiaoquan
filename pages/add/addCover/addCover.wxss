@@ -1,0 +1,34 @@
+.addCover{
+  width:94%;
+  padding: 20rpx 3%;
+}
+.coverList image{
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 15rpx;
+}
+.coverBtn{
+  width: 50%;
+  margin-top: 20rpx;
+}
+.coverBtn .addCoverBtn{
+  height: 200rpx;
+  line-height: 200rpx;
+  background: #64acfe;
+  color: #ffffff;
+  text-align: center;
+}
+.coverBtn .addCoverBtn text{
+  font-size: 50rpx;
+}
+.coverBtn .coverDes{
+  text-align: center;
+  padding: 20rpx 0;
+  color: #bcbcbc;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.coverBtn image{
+  width: 100%;
+}

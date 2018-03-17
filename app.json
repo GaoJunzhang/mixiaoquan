@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/comment/comment",
+    "pages/info/info",    
+    "pages/add/add",
+    "pages/add/des/des",
+    "pages/add/addCover/addCover",
+    "pages/comment/chooseUser/chooseUser",
+    "pages/info/commentUser/commentUser",
+    "pages/info/commentList/commentList",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "密圈",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  }
+}

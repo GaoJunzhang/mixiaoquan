@@ -1,0 +1,35 @@
+<view class="container pt140 bg">
+<view class="header clearfix background">
+<view bindtap="navigateBack" class="back fl"><text class="iconfont icon-zuojiantou"></text></view>
+<text class="title fl">密圈</text>
+</view>
+  <view class="addCover">
+    <view class="add_circle_head">上传本地图片</view>
+    <view class="coverBtn">
+      <view bindtap="chooseimage">
+        <block wx:if="{{tempFilePaths==''}}">
+          <view class="addCoverBtn"><text class="iconfont icon-tupian"></text></view>
+        </block>
+        <block wx:else>
+         <image src="{{tempFilePaths}}"  mode="widthFix"/>
+        </block>
+      </view>
+      <view class="coverDes">（推荐尺寸：750×410 )</view>
+    </view>
+    <view class="add_circle_head">推荐图片</view>
+    <view class="col-avg2 clearfix coverList">
+      <view class="col-item fl">
+        <image src="../../../../images/image/cover.jpg" mode="widthFix"></image>
+      </view>
+      <view class="col-item fl">
+        <image src="../../../../images/image/cover.jpg" mode="widthFix"></image>
+      </view>
+      <view class="col-item fl">
+        <image src="../../../../images/image/cover.jpg" mode="widthFix"></image>
+      </view>
+      <view class="col-item fl">
+        <image src="../../../../images/image/cover.jpg" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+</view>
