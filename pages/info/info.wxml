@@ -35,23 +35,23 @@
         {{item.content}}
       </view>
       </block>
-      <block wx:if="{{item.music!=''}}">  
+        
+      <block wx:if="{{item.imgUrls.length>0}}">
+      <view class="a-scroll">
+        <scroll-view scroll-x class="my-scroll" data-src="{{item.imgUrls}}" bindtap="biggerImg" wx:if="{{item.imgUrls.length>0}}">
+          <view id="img1"  class="s-item" wx:for="{{item.imgUrls}}" >
+            <image src="{{item.imgUrl}}" mode="widthFix"></image>
+          </view>
+        </scroll-view>
+      </view>
+      </block>
+        <block wx:if="{{item.music!=''}}">  
        <view wx:if="{{item.music}}" class="voices_info" data-key="{{item.music}}"  bindtap="gotoPlay">
           <view class="{{animationData==1?'show':'hidden'}}"><text class="iconfont icon-yuyin2"></text></view>
           <view class="{{animationData==2?'show':'hidden'}}"><text class="iconfont icon-yuyin3"></text></view>
           <view class="{{animationData==3?'show':'hidden'}}"><text class="iconfont icon-yuyin1"></text></view>
         </view>     
       </block>  
-      <block wx:if="{{item.imgUrls.length>0}}">
-      <view class="a-scroll">
-        <scroll-view scroll-x class="my-scroll" wx:if="{{item.imgUrls.length>0}}">
-          <view id="img1" class="s-item" wx:for="{{item.imgUrls}}">
-            <image src="{{item.imgUrl}}" mode="widthFix"></image>
-          </view>
-        </scroll-view>
-      </view>
-      </block>
-          
     </view>
     <view class="info_list_foot gray">
       <label bindtap='commentUser' data-val="{{item.id}}" data-great="{{item.isGreat}}" data-index="{{index}}">

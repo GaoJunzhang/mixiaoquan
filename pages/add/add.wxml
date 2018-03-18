@@ -1,5 +1,8 @@
 <view class="container pt140 pb160">
 <view class="header clearfix background">
+ <view bindtap="navigateBack" class="back fl">
+      <text class="iconfont icon-zuojiantou"></text>
+    </view>
 <text class="title fl">密圈</text>
 </view>
   <form>

@@ -41,6 +41,7 @@ Page({
     this.setData({
       uploudImageShow: false
     })
+    wx.navigateBack()
   }, 
   chooseimage: function () {
     var _this = this;
@@ -110,6 +111,7 @@ Page({
       }
     }
   },
+  
   formSubmit:function(){
     let that = this;
     // let sessionId = session.token

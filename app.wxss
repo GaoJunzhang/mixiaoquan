@@ -350,7 +350,7 @@ form{
   font-size: 30rpx;
 }
 .voices_info{
-  padding-bottom: 30rpx;
+  padding-top: 30rpx;
 }
 .voices_info text{
   width: 50%;
@@ -378,6 +378,7 @@ form{
 .s-item {
   width: 300rpx;
   display: inline-block;
+  vertical-align: text-top;
 }
 
 .a-scroll .s-item image {

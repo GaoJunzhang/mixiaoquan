@@ -45,6 +45,9 @@ Page({
       endDate: e.detail.value
     })
   },
+  navigateBack: function () {
+    wx.navigateBack()
+  },
   listenerSwitch: function (e) {
     var that = this;
     if (e.detail.value){      

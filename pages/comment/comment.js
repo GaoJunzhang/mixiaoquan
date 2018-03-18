@@ -4,8 +4,8 @@ let int,id;
 const app = getApp();
 let imgall=[];
 let musicall = [];
-var Session = require('../../lib/session');
-let session = Session.get();
+// var Session = require('../../lib/session');
+// let session = Session.get();
 //录音功能start
 const recorderManager = wx.getRecorderManager()
 const innerAudioContext = wx.createInnerAudioContext()
@@ -59,6 +59,8 @@ Page({
   onLoad: function (options) {
     let that = this;
     id = options.orderId; 
+    musicall = [];
+    imgall = []
 
   }, 
   
@@ -318,6 +320,7 @@ Page({
       img:imgall,
     };
     app.fetchApis(that, '/saveSign', params, 'POST', function (res) {
+      console.log(res)
       // wx.navigateBack({ changed: true });
       let pages = getCurrentPages();//当前页面
       let prevPage = pages[pages.length - 2];//上一页面
@@ -353,7 +356,7 @@ function upload_file(url, filePath, formData, success, fail,uploadvalue) {
   })
 }
 function image_upload(imgvalue,data){
-  
+  console.log(imgvalue, data)
   imgall=imgvalue;
   imgall.push(data);
 }

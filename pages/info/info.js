@@ -248,6 +248,22 @@ Page({
     //   }
     // })
   },
+  //图片点击事件
+  biggerImg: function (e) {
+      //获取当前图片的下表
+      //数据源
+      var img = e.currentTarget.dataset.src;
+      var imgs = [];
+      for(var i=0;i<img.length;i++){
+        imgs.push(img[i].imgUrl)
+      }
+    wx.previewImage({
+      //当前显示下表
+      // current: pictures[index],
+      //数据源
+      urls: imgs
+    })
+  },
   commentUser: function (event){
     let that=this;
     let id = event.currentTarget.dataset.val;
