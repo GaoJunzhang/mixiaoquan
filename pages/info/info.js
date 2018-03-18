@@ -138,7 +138,10 @@ Page({
     }
   },
   navigateBack: function () {
-    wx.navigateBack()
+    // wx.navigateBack()
+    wx.redirectTo({
+      url: '/pages/index/index'
+    })
   },
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
